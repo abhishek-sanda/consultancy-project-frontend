@@ -26,7 +26,7 @@ const Chat = ({ isOpen, onClose }) => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/chat', { message: input });
+      const response = await axios.post('https://scs-consultancy-backend.vercel.app/api/chat', { message: input });
       const botMessage = { text: response.data.response, sender: 'bot' };
       setMessages(prev => [...prev, botMessage]);
     } catch (error) {
