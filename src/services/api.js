@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://scs-consultancy-backend.vercel.app/api';
 
 // Contact API
 export const contactAPI = {
